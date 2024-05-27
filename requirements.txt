@@ -1,1 +1,14 @@
-fastapi[all]
+fastapi
+uvicorn
+mlxtend
+pandas
+dask_ml
+joblib
+sqlalchemy
+passlib
+bcrypt
+python-jose
+pyspark
+numpy
+setuptools
+python-multipart
