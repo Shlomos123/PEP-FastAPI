@@ -8,7 +8,14 @@ from pyspark.ml.fpm import FPGrowth
 from pyspark.sql import SparkSession
 from pyspark.sql.types import StructType, StructField, IntegerType, ArrayType, StringType
 
+import subprocess
 
+try:
+    output = subprocess.check_output(['ls', '/usr/lib/jvm'])
+    print(f"Available Java versions: {output.decode().strip()}")
+except Exception as e:
+    print(f"Error checking Java versions: {e}")
+    
 # Get the directory where the current file (main.py) is located
 current_dir = os.path.dirname(os.path.abspath(__file__))
 
