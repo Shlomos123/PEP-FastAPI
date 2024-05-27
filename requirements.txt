@@ -1,4 +1,3 @@
-subprocess
 fastapi
 uvicorn
 mlxtend
